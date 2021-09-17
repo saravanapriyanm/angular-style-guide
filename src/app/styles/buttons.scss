@@ -1,0 +1,18 @@
+@import "./variables.scss";
+
+[class^="btn-"],
+[class*=" btn-"] {
+  border: 0;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  & + & {
+    margin-left: 0.5em;
+  }
+  &:hover {
+    box-shadow: $shadow;
+  }
+}
+.btn-primary {
+  background: $primary;
+  color: $light;
+}
